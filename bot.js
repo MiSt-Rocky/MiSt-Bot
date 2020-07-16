@@ -107,4 +107,4 @@ const command = args.shift().toLowerCase();
 	message.channel.send(`You wanted to kick: ${taggedUser.username} for reason: ${args[1]} for time: ${args[2]}`);
 }});
 
-client.login(config.token);
+client.login(process.env.BOT_TOKEN);
